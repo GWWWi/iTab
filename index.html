@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="Rz0JzmfQmIBQtT6y72yriF">
+<head data-page-node-id="Hz4kiJhdwRUPFHwWukaZkD">
+  <meta charset="UTF-8" data-page-node-id="S3Gbvq0Ek3sODHDP1zp0HA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ZK1qirA2ZKvtEP6vaSALvB" />
+  <title>新标签页 · iTab</title>
+  <link rel="stylesheet" href="css/style.css" data-page-node-id="O95EmEIXK3M0tk9KaPpky8" />
+  <link rel="dns-prefetch" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://icons.duckduckgo.com" />
+  <link rel="preconnect" href="https://www.google.com" crossorigin />
+  <link rel="preconnect" href="https://icons.duckduckgo.com" crossorigin />
+</head>
+<body data-clock-size="medium" data-page-node-id="VhKXbgUCaLE9PzhD5wd4ZC">
+  <!-- 背景压暗/提亮蒙层，保证文字可读 -->
+  <div class="bg-overlay" data-page-node-id="Zp3aK9D9WkM18hZRTWGJ3J"></div>
+
+  <!-- 顶部栏：搜索框（居中）+ 设置齿轮（右上） -->
+  <header class="topbar" data-page-node-id="hFAXU2cVfYP2osHWVB96Kp">
+    <div class="search-wrap" id="search" data-page-node-id="UmBTTbUBo9HAQe1Ld91cTP"></div>
+    <button class="settings-btn" id="settingsBtn" title="设置" aria-label="设置" data-page-node-id="IPH0xYJZpvO56jkZPEN0Oh">⚙</button>
+  </header>
+
+  <!-- 仪表盘主体 -->
+  <main class="dashboard" data-page-node-id="3KevDwCTDQUafAehl7OXVy">
+    <section class="clock-area" id="clock" data-widget="clock" data-page-node-id="jEdqEhrGCvCgIcb0mDx4pY"></section>
+    <section class="quote-area" id="quote" data-widget="quote" data-page-node-id="were6tB6CWy3SeGFi5t2XW"></section>
+    <section class="quick-access-area" id="quickaccess" data-widget="quickaccess" data-page-node-id="DbJ3iLHvudubR0uFKuZTaK"></section>
+
+    <div class="widgets-grid" data-page-node-id="46rL5gRfjVOjR9asCIKotV">
+      <section class="widget card" id="weather" data-widget="weather" data-page-node-id="MpDBvjAa0gSlBfwbQG9uyu"></section>
+      <section class="widget card" id="todo" data-widget="todo" data-page-node-id="kVHyKvmigWzsYnDGLPfzMF"></section>
+      <section class="widget card" id="notes" data-widget="notes" data-page-node-id="dS49KpGRqqnlFBmvXXDZOi"></section>
+      <section class="widget card" id="countdown" data-widget="countdown" data-page-node-id="kfakLB9dddLro2ABJ4CdO7"></section>
+    </div>
+  </main>
+
+  <!-- 设置面板 & 弹窗根节点 -->
+  <div class="settings-panel" id="settingsPanel" aria-hidden="true" data-page-node-id="KJe0udSnRvYXFJepSp5fUi"></div>
+  <div class="modal-root" id="modalRoot" data-page-node-id="z4DNrTL1gjYQk3nvYXlxEN"></div>
+
+  <!-- 按依赖顺序加载（经典脚本，无需构建；可直接双击 index.html 调试） -->
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/widgets/clock.js"></script>
+  <script src="js/widgets/search.js"></script>
+  <script src="js/widgets/weather.js"></script>
+  <script src="js/widgets/quickaccess.js"></script>
+  <script src="js/widgets/todo.js"></script>
+  <script src="js/widgets/notes.js"></script>
+  <script src="js/widgets/countdown.js"></script>
+  <script src="js/widgets/quote.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
